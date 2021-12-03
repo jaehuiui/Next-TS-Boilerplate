@@ -18,9 +18,9 @@ function setItem(key: string, value: any): void {
  * @return value | undefined
  */
 
-function getItem(key: string): any {
+function getItem(key: string): any | undefined {
 	if (localStorage.getItem(key)) {
-		return JSON.parse(localStorage.getItem(key));
+		return JSON.parse(localStorage.getItem(key)!);
 	}
 	return undefined;
 }

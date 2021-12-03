@@ -1,18 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { Config } from "@lib/utils/config";
 
 export default class MyDocument extends Document {
 	render() {
 		return (
-			<Html>
+			<Html lang={Config.locale}>
 				<Head>
-					<meta
-						name="your-application-name"
-						content="boilerplate-by-jaehuiui"
-					/>
-					<meta
-						name="description"
-						content="nextjs+typescript boilerplate, enjoy!"
-					/>
+					<meta name="application-name" content={Config.siteName} />
+					<meta name="description" content={Config.description} />
 				</Head>
 				<body>
 					<Main />

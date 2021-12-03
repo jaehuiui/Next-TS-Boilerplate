@@ -1,5 +1,10 @@
 import React from "react";
+import Form from "@comp/molecules/form";
 
 export default function Home() {
-  return <div>hi</div>;
+	return (
+		<div>
+			<Form />
+		</div>
+	);
 }

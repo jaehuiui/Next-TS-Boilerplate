@@ -7,7 +7,7 @@ export interface LabelProps {
 	name: string;
 }
 
-function MainLabel({ target, name }: LabelProps) {
+function FormLabel({ target, name }: LabelProps) {
 	return (
 		<label className={classnames(styles.main)} htmlFor={target}>
 			{name}
@@ -15,4 +15,4 @@ function MainLabel({ target, name }: LabelProps) {
 	);
 }
 
-export { MainLabel };
+export { FormLabel };
