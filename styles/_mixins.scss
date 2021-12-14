@@ -1,3 +1,28 @@
+// justify-content -> flex-start vs start 
+// flex-start takes into account the presence of the 
+// -reverse values of the flex direction, while start does not.
+// Thus, Recommend to use flex-start rather than start
+
+@mixin layout($direction: column, $justify: center, $align: center) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+// Default Font Size : 10px!
+// If this project will use more than two font styles, add argument about font-style
+// By using 10px as default size, calculating the size is much easier
+
+@mixin font($size: 1.6rem, $weight: normal, $color: #000000) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+// Below mixins are about media query
+// Modify breakpoints in _variable.scss for development
+
 @mixin mobile {
 	@media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
 		@content;

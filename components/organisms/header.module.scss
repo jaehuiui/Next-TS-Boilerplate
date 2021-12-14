@@ -1,0 +1,19 @@
+@import "@styles/main.scss";
+
+.wrapper {
+	@include layout(row, space-between);
+	width: 100%;
+	height: $header-height;
+	background-color: $header-bg;
+
+	padding: 12px 36px;
+
+	p,
+	a {
+		@include font(1.6rem, normal, $white-100);
+	}
+
+	a {
+		margin-right: 0.8rem;
+	}
+}

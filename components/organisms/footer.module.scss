@@ -1,0 +1,11 @@
+@import "@styles/main.scss";
+
+.wrapper {
+	@include layout(row, space-between);
+	@include font(1.6rem, normal, $white-100);
+	width: 100%;
+	height: $footer-height;
+	background-color: $footer-bg;
+
+	padding: 32px 36px;
+}
