@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Chore",
+		"color": "ffc0cb",
+		"description": "Configuration, Minor Package Issues"
+	},
+	{
+		"name": "Feat",
+		"color": "008080",
+		"description": "New Features or request"
+	},
+	{
+		"name": "Deploy",
+		"color": "003366",
+		"description": "About Deploy"
+	},
+	{
+		"name": "Styles",
+		"color": "ffd700",
+		"description": "Styles Changed"
+	},
+	{
+		"name": "Bugfix",
+		"color": "ff7373",
+		"description": "Something isn't working"
+	},
+	{
+		"name": "Docs",
+		"color": "f0f8ff",
+		"description": "Something changed with documents"
+	},
+	{
+		"name": "API",
+		"color": "133337",
+		"description": "About API Logic"
+	},
+	{
+		"name": "Refactor",
+		"color": "f29a4e",
+		"description": "Refactoring some files and codes"
+	},
+	{
+		"name": "Question",
+		"color": "9ED447",
+		"description": "Further information is requested"
+	},
+	{
+		"name": "Test",
+		"color": "ccffc4",
+		"description": "About Tests"
+	}
+]

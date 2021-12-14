@@ -2,6 +2,8 @@
 
 > Next.js 12+ with Typescript, Sass and Redux
 
+Clone this repo and use it to create your own project!
+
 ## Documents
 
 - 디자인 & 스타일 관련 문서 [Design Document](docs/2-Design.md)
@@ -26,7 +28,7 @@ cd my-proj
 npm install
 ```
 
-Run locally in development mode with live reload  
+Run locally in development mode with live reload
 Open _http://localhost:3000_ with any browser
 
 ```
@@ -37,7 +39,7 @@ npm run dev
 
 ### Components
 
-Based on **Atomic Design Pattern**  
+Based on **Atomic Design Pattern**
 `components/*`
 
 ```
@@ -50,7 +52,7 @@ Based on **Atomic Design Pattern**
 └── pages                   # Instances of Templates
 ```
 
-If you are interested in **Atomic Design Pattern**,  
+If you are interested in **Atomic Design Pattern**,
 check my design document [here](docs/2-Design.md)
 
 ### MISC
@@ -60,3 +62,9 @@ utilites, services are implemented in `lib/utils`, `lib/services`
 ## Customize
 
 1. Change favicon at `public/favicon.ico`
+2. Change Labels in Repo with `lib/data/git-label.json`
+   ```
+   npm install -g github-label-sync
+   npx github-label-sync --access-token [your token] --labels lib/data/git-label.json [your name]/[your repo name]
+   ```
+3. Change PR, Issues Template with `.github/*.md`
