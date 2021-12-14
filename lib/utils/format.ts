@@ -8,7 +8,7 @@ import * as Enum from "@lib/utils/enum";
  * @return string
  */
 
-function statusMessage(status: number): string {
+function resMsgFormat(status: number): string {
 	switch (status) {
 		case Enum.Status.SUCCESS: {
 			return "request success!";
@@ -22,4 +22,4 @@ function statusMessage(status: number): string {
 	}
 }
 
-export { statusMessage };
+export { resMsgFormat };
