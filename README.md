@@ -2,6 +2,10 @@
 
 > Next.js 12+ with Typescript, Sass and Redux
 
+## Documents
+
+- 디자인 & 스타일 관련 문서 [Design Document](docs/2-Design.md)
+
 ## Features
 
 - [Next.js](https://nextjs.org) SSR React Framework
@@ -12,11 +16,29 @@
 - Lighthouse Score
 - Use Cookie with react-cookies, next-cookie
 
-## Structure
+## How to Start
+
+Run the following command on your local environment
+
+```
+git clone --depth=1 https://github.com/jaehuiui/Next-TS-Boilerplate.git my-proj
+cd my-proj
+npm install
+```
+
+Run locally in development mode with live reload  
+Open _http://localhost:3000_ with any browser
+
+```
+npm run dev
+```
+
+## Project Structure
 
 ### Components
 
-Based on **Atomic Design Pattern**
+Based on **Atomic Design Pattern**  
+`components/*`
 
 ```
 |── components
@@ -28,8 +50,13 @@ Based on **Atomic Design Pattern**
 └── pages                   # Instances of Templates
 ```
 
+If you are interested in **Atomic Design Pattern**,  
+check my design document [here](docs/2-Design.md)
+
 ### MISC
 
-utilites, services are implemented in _lib_
+utilites, services are implemented in `lib/utils`, `lib/services`
 
 ## Customize
+
+1. Change favicon at `public/favicon.ico`
