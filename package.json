@@ -1,7 +1,17 @@
 {
 	"name": "boilerplate",
 	"version": "1.0.0",
-	"private": true,
+	"private": false,
+	"author": {
+		"name": "jaehuiui"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jaehuiui/Next-TS-Boilerplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jaehuiui/Next-TS-Boilerplate/issues"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
