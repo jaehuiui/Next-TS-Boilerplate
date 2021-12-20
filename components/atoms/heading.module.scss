@@ -1,0 +1,7 @@
+@import "@styles/main.scss";
+
+.heading1 {
+	&.dark {
+		color: map-get($map: $dark-theme, $key: "heading");
+	}
+}
