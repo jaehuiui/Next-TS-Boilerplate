@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./home.module.scss";
 import classnames from "classnames";
-import Article from "@comp/organisms/article";
+import { Article } from "@comp";
 
 export default function HomeTemplate() {
 	return (

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import styles from "./form.module.scss";
 import classnames from "classnames";
-import { FormLabel } from "@comp/atoms/label";
-import { FormInput } from "@comp/atoms/input";
+import { FormLabel, FormInput } from "@comp";
 
-export default function Form() {
+export function Form() {
 	const [name, setName] = useState<string>("");
 
 	return (

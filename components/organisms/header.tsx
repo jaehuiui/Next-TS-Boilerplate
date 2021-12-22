@@ -4,7 +4,7 @@ import classnames from "classnames";
 import Link from "next/link";
 import path from "@lib/utils/path";
 
-export default function Header() {
+export function Header() {
 	return (
 		<header className={classnames(styles.wrapper)}>
 			<p>Logo</p>

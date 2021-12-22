@@ -1,50 +1,33 @@
 {
-  "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "removeComments": true,
-    "strict": true,
-    "alwaysStrict": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "target": "es5",
-    "outDir": "dist",
-    "declaration": true,
-    "jsx": "preserve",
-    "isolatedModules": true,
-    "noEmit": false,
-    "baseUrl": ".",
-    "paths": {
-      "@comp/*": [
-        "components/*"
-      ],
-      "@temp/*": [
-        "templates/*"
-      ],
-      "@lib/*": [
-        "lib/*"
-      ],
-      "@styles/*": [
-        "styles/*"
-      ]
-    },
-    "incremental": true
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+	"compilerOptions": {
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"removeComments": true,
+		"strict": true,
+		"alwaysStrict": true,
+		"allowJs": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"esModuleInterop": true,
+		"target": "es5",
+		"outDir": "dist",
+		"declaration": true,
+		"jsx": "preserve",
+		"isolatedModules": true,
+		"noEmit": false,
+		"baseUrl": ".",
+		"paths": {
+			"@comp": ["components"],
+			"@comp/*": ["components/*"],
+			"@temp/*": ["templates/*"],
+			"@temp": ["templates"],
+			"@lib/*": ["lib/*"],
+			"@styles/*": ["styles/*"]
+		},
+		"incremental": true
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules", "**/*.spec.ts"]
 }

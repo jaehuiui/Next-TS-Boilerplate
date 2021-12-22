@@ -7,12 +7,10 @@ export interface LabelProps {
 	name: string;
 }
 
-function FormLabel({ target, name }: LabelProps) {
+export function FormLabel({ target, name }: LabelProps) {
 	return (
 		<label className={classnames(styles.main)} htmlFor={target}>
 			{name}
 		</label>
 	);
 }
-
-export { FormLabel };

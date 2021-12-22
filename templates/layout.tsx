@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./layout.module.scss";
 import classnames from "classnames";
-import Header from "@comp/organisms/header";
-import Footer from "@comp/organisms/footer";
+import { Header, Footer } from "@comp";
 
 export interface LayoutProps {
 	children: React.ReactNode;

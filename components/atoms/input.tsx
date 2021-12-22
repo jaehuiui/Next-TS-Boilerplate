@@ -8,10 +8,11 @@ export interface InputProps {
 	setData: (value: string) => void;
 }
 
-function FormInput({ id, data, setData }) {
-	function handleData(e) {
+export function FormInput({ id, data, setData }: InputProps) {
+	function handleData(e: any) {
 		setData(e.target.value);
 	}
+
 	return (
 		<input
 			id={id}
@@ -21,5 +22,3 @@ function FormInput({ id, data, setData }) {
 		/>
 	);
 }
-
-export { FormInput };
