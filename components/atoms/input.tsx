@@ -6,9 +6,10 @@ export interface InputProps {
 	id: string;
 	data: string;
 	setData: (value: string) => void;
+	theme?: string;
 }
 
-export function FormInput({ id, data, setData }: InputProps) {
+export function Input({ id, data, setData, theme = "dark" }: InputProps) {
 	function handleData(e: any) {
 		setData(e.target.value);
 	}
@@ -16,7 +17,7 @@ export function FormInput({ id, data, setData }: InputProps) {
 	return (
 		<input
 			id={id}
-			className={classnames(styles.form)}
+			className={classnames(styles.wrapper, styles[theme])}
 			value={data}
 			onChange={handleData}
 		/>

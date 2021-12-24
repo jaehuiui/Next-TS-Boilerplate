@@ -1,12 +1,16 @@
 import React from "react";
-import { Form } from "@comp";
+import Meta from "@lib/utils/meta";
 import HomeTemplate from "@temp/home";
 
 export default function Home() {
 	return (
-		<div>
+		<>
+			<Meta
+				name={"Boilerplate"}
+				title={"Boilerplate | Home"}
+				description={"Write your own description here"}
+			/>
 			<HomeTemplate />
-			<Form />
-		</div>
+		</>
 	);
 }

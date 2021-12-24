@@ -1,6 +1,14 @@
 @import "@styles/main.scss";
 
 .heading1 {
+	font-size: 3.2rem;
+	&.dark {
+		color: map-get($map: $dark-theme, $key: "heading");
+	}
+}
+
+.heading2 {
+	font-size: 2rem;
 	&.dark {
 		color: map-get($map: $dark-theme, $key: "heading");
 	}

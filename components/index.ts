@@ -1,9 +1,10 @@
 export * from "@comp/atoms/heading";
-export * from "@comp/atoms/input";
-export * from "@comp/atoms/label";
+export * from "@comp/atoms/text";
+export { Input } from "@comp/atoms/input";
+export { Label } from "@comp/atoms/label";
 
-export * from "@comp/molecules/form";
+export { Form } from "@comp/molecules/form";
 
-export * from "@comp/organisms/article";
-export * from "@comp/organisms/footer";
-export * from "@comp/organisms/header";
+export { Article } from "@comp/organisms/article";
+export { Footer } from "@comp/organisms/footer";
+export { Header } from "@comp/organisms/header";

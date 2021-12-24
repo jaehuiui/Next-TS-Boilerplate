@@ -1,6 +1,10 @@
 @import "@styles/main.scss";
 
-.form {
+.wrapper {
 	display: inline-block;
 	width: 120px;
+
+	&.dark {
+		color: map-get($map: $dark-theme, $key: "heading");
+	}
 }

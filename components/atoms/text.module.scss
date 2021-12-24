@@ -1,10 +1,14 @@
 @import "@styles/main.scss";
 
-.wrapper {
-	display: inline-block;
+.bold {
+	&.dark {
+		color: map-get($map: $dark-theme, $key: "heading");
+	}
+}
 
+.paragraph {
+	padding: 1rem;
 	font-size: 1.6rem;
-
 	&.dark {
 		color: map-get($map: $dark-theme, $key: "heading");
 	}

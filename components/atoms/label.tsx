@@ -5,11 +5,15 @@ import classnames from "classnames";
 export interface LabelProps {
 	target: string;
 	name: string;
+	theme?: string;
 }
 
-export function FormLabel({ target, name }: LabelProps) {
+export function Label({ target, name, theme = "dark" }: LabelProps) {
 	return (
-		<label className={classnames(styles.main)} htmlFor={target}>
+		<label
+			className={classnames(styles.wrapper, styles[theme])}
+			htmlFor={target}
+		>
 			{name}
 		</label>
 	);
